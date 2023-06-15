@@ -40,5 +40,5 @@ app.delete('/api/students/:id',(req,res)=>{
      res.send(student);
 });
 
-const port = process.env.port || 80;
+const port = process.env.PORT || 80;
 app.listen(port,()=> console.log(`Escuchando en puerto ${port}....`))
